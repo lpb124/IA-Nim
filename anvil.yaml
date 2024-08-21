@@ -1,0 +1,82 @@
+allow_embedding: false
+package_name: Feedback_Form_1
+db_schema:
+  feedback:
+    client: none
+    server: full
+    columns:
+    - name: pile 1
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: pile 2
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: Player move
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: CPU move
+      admin_ui: {order: 3, width: 200}
+      type: datetime
+    - name: pile 3
+      admin_ui: {order: 1.5, width: 200}
+      type: number
+    title: Feedback
+  move_logs:
+    title: Move Logs
+    client: none
+    server: full
+    columns:
+    - name: pile 1
+      admin_ui: {width: 200}
+      type: number
+    - name: pile 2
+      admin_ui: {width: 200}
+      type: number
+    - name: pile 3
+      admin_ui: {width: 200}
+      type: number
+    - name: CPU move
+      admin_ui: {width: 200}
+      type: number
+    - name: Player move
+      admin_ui: {width: 200}
+      type: number
+exported_table_schema:
+- python_name: feedback
+  client: none
+  server: full
+  name: feedback
+  columns:
+    16Hus1t6n6w=:
+      name: feedback
+      type: string
+      admin_ui: {order: 2, width: 200}
+    Px8zj6UwDFM=:
+      name: created
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+    nwWI7aBZtwc=:
+      name: name
+      type: string
+      admin_ui: {order: 0, width: 200}
+    yT7YVvq4+Co=:
+      name: email
+      type: string
+      admin_ui: {order: 1, width: 200}
+  id: 1264
+startup: {type: form, module: StartPageForm}
+name: Clone of Nims
+startup_form: null
+correct_dependency_ids: {}
+renamed: true
+cta: {preset: feedback_form_welcome}
+runtime_options: {version: 2, server_version: python3-sandbox, client_version: '3', server_spec: null}
+dependencies: []
+metadata: {title: Game of Nim, description: Arithmetical Contest Adapted from Tales of Eternia, logo_img: 'asset:Tales_of_Eternia_Logo.png'}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}

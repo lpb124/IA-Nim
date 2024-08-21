@@ -1,0 +1,31 @@
+container: {type: ColumnPanel}
+components:
+- name: headline_1
+  properties: {role: headline, text: The Game Of Nim, background: 'theme:Secondary 700', foreground: 'theme:White', align: center}
+  type: Label
+  layout_properties: {grid_position: 'HOVEWB,NLLKBR'}
+- name: card_1
+  properties: {role: card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'HAIPIR,MOZSBB'}
+  components:
+  - name: rich_text_1
+    properties: {content: There are three piles of stones. Take turns taking the stones. In each turn you can only take a minimum of 1 stone and a maximum of 3 stones. The one to take the last stone wins.}
+    type: RichText
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU QTPORB,HAJYFC'}
+    components: []
+  - name: image_1
+    properties: {source: _/theme/Tales_of_Eternia_Logo.png}
+    type: Image
+    layout_properties: {grid_position: 'ROMKZX,ESUAEL'}
+  - name: start_game
+    properties: {text: New game, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU YZSWYL,DQDVAE'}
+    event_bindings: {click: start_game_click}
+  - name: load_game
+    properties: {text: LOAD GAME, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU PHULPW,EKGFZY'}
+    event_bindings: {click: load_game_click}
+is_package: true

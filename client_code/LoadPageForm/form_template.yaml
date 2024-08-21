@@ -1,0 +1,36 @@
+container: {type: ColumnPanel}
+components:
+- name: headline_1
+  properties: {role: headline, text: The Game Of Nim, background: 'theme:Secondary 700', foreground: 'theme:White', align: center}
+  type: Label
+  layout_properties: {grid_position: 'HOVEWB,NLLKBR'}
+- name: card_1
+  properties: {role: card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'HAIPIR,MOZSBB'}
+  components:
+  - name: rich_text_1
+    properties: {content: Use your password below to load a previous game., align: center}
+    type: RichText
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU QTPORB,HAJYFC'}
+    components: []
+  - name: image_1
+    properties: {source: _/theme/Tales_of_Eternia_Logo.png}
+    type: Image
+    layout_properties: {grid_position: 'ROMKZX,ESUAEL'}
+  - name: password_txt
+    properties: {align: center}
+    type: TextBox
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU BGFLEA,WAJSLM'}
+    event_bindings: {pressed_enter: load_game}
+  - name: start_game_copy
+    properties: {text: LOAD GAME, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU LCHIMW,KZTRUG'}
+    event_bindings: {click: load_game}
+  - name: start_game_copy_copy
+    properties: {text: BACK TO MAIN MENU, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU PIVEMW,OWZWFX'}
+    event_bindings: {click: back}
+is_package: true

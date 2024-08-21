@@ -1,0 +1,80 @@
+container:
+  type: ColumnPanel
+  properties: {visible: true}
+components:
+- name: card_1
+  properties: {role: card, spacing_below: none}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'ZYHABR,YFSZQD'}
+  components:
+  - name: headline_1
+    properties: {role: headline, text: The Game Of Nim, background: 'theme:Secondary 700', foreground: 'theme:White', align: center, bold: false, visible: true, italic: false}
+    type: Label
+    layout_properties: {grid_position: 'WCVKVY,JDLEIF'}
+    data_bindings: []
+  - name: save_btn
+    properties: {text: SAVE GAME, foreground: 'theme:Secondary 700', bold: true, enabled: true, visible: true, align: right}
+    type: Button
+    layout_properties: {grid_position: 'YBJXAP,NENIHD'}
+    event_bindings: {click: save_btn_click}
+  - name: first_pile_lbl
+    properties: {text: Pile 1}
+    type: Label
+    layout_properties: {grid_position: 'PTNZEI,NJEEMP VMNSVY,MWXNYG'}
+  - name: first_pile_cnv
+    properties: {height: 23}
+    type: Canvas
+    layout_properties: {grid_position: 'PTNZEI,NJEEMP QUEPTL,YRCMIP'}
+    event_bindings: {reset: first_pile_cnv_reset}
+  - name: first_pile_txt
+    properties: {enabled: false}
+    type: TextBox
+    layout_properties: {grid_position: 'PTNZEI,OSIXAF'}
+  - name: second_pile_lbl
+    properties: {text: Pile 2}
+    type: Label
+    layout_properties: {grid_position: 'YOOSLM,OCHEDG HIDPUP,LELMEP'}
+  - name: second_pile_cnv
+    properties: {height: '20'}
+    type: Canvas
+    layout_properties: {grid_position: 'YOOSLM,OCHEDG SJVDTS,JOCFRS'}
+    event_bindings: {reset: second_pile_cnv_reset}
+  - name: second_pile_txt
+    properties: {enabled: false, italic: false}
+    type: TextBox
+    layout_properties: {grid_position: 'YOOSLM,IERWTT'}
+  - name: third_pile_lbl
+    properties: {text: Pile 3}
+    type: Label
+    layout_properties: {grid_position: 'KDJOVY,AGXJEC GYITJA,VTSPRS'}
+  - name: third_pile_cnv
+    properties: {height: '20'}
+    type: Canvas
+    layout_properties: {grid_position: 'KDJOVY,AGXJEC TEKCZV,PILRQH'}
+    event_bindings: {reset: third_pile_cnv_reset}
+  - name: third_pile_txt
+    properties: {enabled: false}
+    type: TextBox
+    layout_properties: {grid_position: 'KDJOVY,TINIGV'}
+  - name: which_pile_lbl
+    properties: {text: 'Which pile will you take the stones from?'}
+    type: Label
+    layout_properties: {grid_position: 'DAJJVN,WEHQWX XMWHWF,MTAWOZ'}
+  - name: many_stones_lbl
+    properties: {text: 'How many stones will you take?'}
+    type: Label
+    layout_properties: {grid_position: 'DAJJVN,WEHQWX KPBVWM,KYOOJA'}
+  - name: which_pile_txt
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'DAJJVN,EDLJAE ROMFVL,WMPKIN'}
+  - name: many_stones_txt
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'DAJJVN,EDLJAE ZUCSXD,VDSWSZ'}
+  - name: submit_btn
+    properties: {text: ENTER, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'NPTRUY,OWEEHN'}
+    event_bindings: {click: submit_btn_click}
+is_package: true

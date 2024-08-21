@@ -1,0 +1,32 @@
+container: {type: ColumnPanel}
+components:
+- name: headline_1
+  properties: {role: headline, text: The Game Of Nim, background: 'theme:Secondary 700', foreground: 'theme:White', align: center}
+  type: Label
+  layout_properties: {grid_position: 'HOVEWB,NLLKBR'}
+- name: card_1
+  properties: {role: card, spacing_above: none, spacing_below: none, col_spacing: medium}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'HAIPIR,MOZSBB'}
+  components:
+  - name: youtube_video_1
+    properties: {youtube_id: C-KqmBMyv4s, autoplay: false}
+    type: YouTubeVideo
+    layout_properties: {grid_position: 'ROMKZX,ESUAEL XGYTHQ,KXOWVX'}
+    event_bindings: {state_change: youtube_video_1_state_change}
+    data_bindings: []
+  - name: rich_text_1
+    properties: {content: 'The video above contains tips on how to clear the next level, don''t forget to check it out! Also, make sure to save the level immediately when you click continue, so you can restart the level when you lose!', align: center}
+    type: RichText
+    layout_properties: {grid_position: 'ROMKZX,ESUAEL PMQVHM,FYVZSA'}
+    components: []
+  - name: continue_game
+    properties: {text: CONTINUE, foreground: 'theme:Secondary 700', bold: true}
+    type: Button
+    layout_properties: {grid_position: 'ROMKZX,ESUAEL EHFFYS,JPUQML'}
+    event_bindings: {click: continue_game_click}
+  - name: image_1
+    properties: {source: _/theme/Tales_of_Eternia_Logo.png, height: 449}
+    type: Image
+    layout_properties: {grid_position: 'ROMKZX,DJTKTU'}
+is_package: true

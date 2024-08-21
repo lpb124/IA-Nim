@@ -1,0 +1,16 @@
+unique_ids:
+  forms:
+    ContinuePageForm: '1714128955917449612575672.2584'
+    GameForm: '1711194560060346522946497.7933'
+    GameForm.RowTemplate1: '1714195257690813277886303.2877'
+    GameForm.RowTemplate2: '1714195363506349843873369.65405'
+    LoadPageForm: '1714159807114770517176146.3385'
+    StartPageForm: '1711189325432876405673361.6881'
+  modules: {}
+  server_modules: {}
+  assets:
+    Tales_of_Eternia_Logo.png: '171120050885271259192423.01726'
+    standard-page.html: Q3QO6SVCSYGG2URQPHD2WQN53IJYWBMT
+    stone.png: '1711244059332144140122315.2612'
+    theme.css: WZK5YAI72HXBAVF2NY77323MVSKI5HGU
+  scripts: {}
